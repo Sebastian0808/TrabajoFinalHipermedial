@@ -4,18 +4,48 @@
 }
 
 #fuente-personalizada {
+	width: 100%;
+	margin : 0 ;
+	padding: 0;
 	font-family:  'miFuente';
-	font-size: 40px;
- }
+	font-size: 60px;
+}
 
 
 body {
+	background-color: #f6e492;
 	text-align: center;
-	width:500px;
+	width:95%;
 	background-size: contain;
 	margin:30px auto 30px auto;
-	padding:150px 0 150px 0;
 	border:15px solid black;
 	border-bottom-color:#666666;
 	border-left-color:#333333;
+}
+
+.red {
+	cursor: pointer;
+	color:red;
+}
+.green {
+	cursor:pointer;
+	color:green;
+}
+.yellow {
+	cursor: pointer;
+	color:rgb(195, 195, 0);
+}
+.orange {
+	cursor: pointer;
+	color:orange;
+}
+.black {
+	cursor: pointer;
+	font-weight: 600;
+}
+.black_number{
+	font-weight: 600;
+}
+.sub {
+	text-decoration: underline;
 }
