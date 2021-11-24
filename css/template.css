@@ -5,19 +5,20 @@
 
 #fuente-personalizada {
 	width: 100%;
-	margin : auto ;
-	padding: 0;
 	font-family:  'miFuente';
 	font-size: 60px;
 }
 
+html{
+	height: 100%;
+}
 
 body {
 	background-color: #f6e492;
 	text-align: center;
-	width:95%;
+	width: 1000px;
 	background-size: contain;
-	margin:30px auto 30px auto;
+	margin:5% auto 10% auto;
 	border:15px solid black;
 	border-bottom-color:#666666;
 	border-left-color:#333333;
@@ -25,7 +26,9 @@ body {
 	justify-content: center;
 	align-content: center;
 }
-
+.pointer{
+	cursor: pointer;
+}
 .red {
 	cursor: pointer;
 	color:red;
@@ -52,3 +55,4 @@ body {
 .sub {
 	text-decoration: underline;
 }
+
