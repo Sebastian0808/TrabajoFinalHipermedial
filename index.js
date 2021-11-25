@@ -1,10 +1,38 @@
+//<marquee absolute direction="down" height="500px color='red'">Este texto se mueve de abajo hacia arriba</marquee>
+
 
 var peso = document.querySelectorAll(".red")
-for (var i = 0; i < peso.length; i++) {
-    peso[i].addEventListener("click", function() {
-        peso[i].classList.toggle("peso")
+
+peso.forEach((item) =>{
+    var index = item.id
+    var nuevoPeso = document.createElement("marquee");
+    nuevoPeso.setAttribute("direction", "down");
+    nuevoPeso.setAttribute("color", "red");
+    nuevoPeso.setAttribute("behavior", "Slide")
+    nuevoPeso.style.position = "absolute";
+    nuevoPeso.style.marginLeft = "-70px";
+    nuevoPeso.innerHTML = "PESO";
+    if(index == 1){
+        nuevoPeso.setAttribute("height", "930px"); 
+    }
+    if(index == 2){
+        nuevoPeso.setAttribute("height", "800px" );
+    }
+    if(index == 3){
+        nuevoPeso.setAttribute("height", "730px" );
+    }
+    if(index == 4){
+        nuevoPeso.setAttribute("height", "730px" );
+    }
+    item.addEventListener("click", function(){
+        item.classList.toggle("hidden");
+        item.style.position = "relative";
+        item.parentElement.appendChild(nuevoPeso);
+        item.appendChild(nuevoPeso);
+        item.style.color = "#f6e492"
+        nuevoPeso.style.color = "red"
     })
-}
+})
 
 var fuerza = document.querySelectorAll(".green")
 for (var i = 0; i < fuerza.length; i++) {
@@ -14,12 +42,33 @@ for (var i = 0; i < fuerza.length; i++) {
 }
 
 var movimiento = document.querySelectorAll(".yellow")
-for (var i = 0; i < movimiento.length; i++) {
-    movimiento[i].addEventListener("click", function(e) {
-    console.log("Clicked Movimiento")
-        e.target.innertHTML = `<marquee class="yellow" direction="right"  width="50%" scrolldelay="100" scrollamount="5" loop="infinite" >MOVIMIENTO</marquee>`
-    })
-}
+movimiento.forEach((item) =>{
+    var index = item.id
+    var nuevoPeso = document.createElement("marquee");
+    nuevoPeso.setAttribute("direction", "right");
+    nuevoPeso.setAttribute("color", "red");
+    nuevoPeso.setAttribute("behavior", "Scroll");
+    if(index == 1){
+        nuevoPeso.setAttribute("width", "960px");
+        nuevoPeso.style.marginLeft = "-170px";
+    }
+    if(index == 2){
+        nuevoPeso.setAttribute("width", "960px");
+        nuevoPeso.style.marginLeft = "-950px";
+    }
+    nuevoPeso.style.position = "absolute";
+    nuevoPeso.innerHTML = "MOVIMENTO";
+    item.addEventListener("click", function(e) {
+        console.log("Clicked Movimiento")
+        item.classList.toggle("hidden");
+        item.style.position = "relative";
+        item.parentElement.appendChild(nuevoPeso);
+        item.appendChild(nuevoPeso);
+        item.style.color = "#f6e492"
+        nuevoPeso.style.color = "rgb(195, 195, 0)"
+        })
+})
+
 
 var golpe = document.querySelectorAll(".orange")
 for (var i = 0; i < golpe.length; i++) {
