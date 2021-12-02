@@ -1,5 +1,3 @@
-//<marquee absolute direction="down" height="500px color='red'">Este texto se mueve de abajo hacia arriba</marquee>
-
 
 var peso = document.querySelectorAll(".red")
 
@@ -73,8 +71,7 @@ movimiento.forEach((item) =>{
 var golpe = document.querySelectorAll(".orange")
 for (var i = 0; i < golpe.length; i++) {
     golpe[i].addEventListener("click", function() {
-        // window.location.href = "golpe.html"
-        window.open("golpe.html")
+        window.location.href = "https://golpe.vercel.app/"
     })
 }
 
