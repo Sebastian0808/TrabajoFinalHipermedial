@@ -73,7 +73,8 @@ movimiento.forEach((item) =>{
 var golpe = document.querySelectorAll(".orange")
 for (var i = 0; i < golpe.length; i++) {
     golpe[i].addEventListener("click", function() {
-        window.location.href = "golpe.html"
+        // window.location.href = "golpe.html"
+        window.open("golpe.html")
     })
 }
 
