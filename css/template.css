@@ -1,12 +1,12 @@
 @font-face {
 	font-family: 'miFuente';
-	src: url(../fuentes/Yarrow.ttf);
+	src: url(../fuentes/stockstill_[allfont.es].ttf);
 }
 
 #fuente-personalizada {
 	width: 100%;
 	font-family:  'miFuente';
-	font-size: 60px;
+	font-size: 70px;
 }
 
 html{
