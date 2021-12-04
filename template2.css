@@ -1,0 +1,126 @@
+@font-face {
+	font-family: 'miFuente';
+	src: url(../fuentes/Smallville1);
+}
+
+#fuente-personalizada {
+	width: 100%;
+	font-family:  'miFuente';
+	font-size: 45px;
+}
+
+html{
+	height: 100%;
+}
+
+body {
+	background-color: #f6e492;
+	text-align: center;
+	width: 1000px;
+	background-size: contain;
+	margin:5% auto 10% auto;
+	border:15px solid black;
+	border-bottom-color:#666666;
+	border-left-color:#333333;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+.pointer{
+	cursor: pointer;
+}
+.red {
+	cursor: pointer;
+	color:red;
+}
+.green {
+	cursor:pointer;
+	color:green;
+}
+.yellow {
+	cursor: pointer;
+	color:rgb(195, 195, 0);
+}
+.orange {
+	cursor: pointer;
+	color:orange;
+}
+.black {
+	cursor: pointer;
+	font-weight: 600;
+}
+.black_number{
+	font-weight: 600;
+}
+.sub {
+	text-decoration: underline;
+}
+
+.word {
+
+	font-family: Arial;
+	font-size: 48px;
+	color: black;
+	line-height: 1.4em;
+	height: 1.4em;
+	padding: 0 14px 0 7px;
+	display: inline-block;
+	vertical-align: middle;
+	position: fixed;
+}
+
+.word:before {
+	content: '';
+	background-color: white;
+	width: 1px;
+	position: fixed;
+	top: 5px;
+	bottom: 5px;
+	right: 7px;
+}
+
+.word2 {
+
+	font-family: Arial;
+	font-size: 48px;
+	color: black;
+	line-height: 1.4em;
+	height: 1.4em;
+	padding: 0 14px 0 7px;
+	display: inline-block;
+	vertical-align: middle;
+	position: absolute;
+}
+
+.word2:before {
+	content: '';
+	background-color: white;
+	width: 1px;
+	position: absolute;
+	top: 5px;
+	bottom: 5px;
+	right: 7px;
+}
+
+.word3 {
+
+	font-family: Arial;
+	font-size: 48px;
+	color: black;
+	line-height: 1.4em;
+	height: 1.4em;
+	padding: 0 14px 0 7px;
+	display: inline-block;
+	vertical-align: middle;
+	position: absolute;
+}
+
+.word3:before {
+	content: '';
+	background-color: white;
+	width: 1px;
+	position: absolute;
+	top: 5px;
+	bottom: 5px;
+	right: 7px;
+}
